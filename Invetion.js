@@ -165,8 +165,8 @@ function sendRSVP(to) {
     if (!message) { alert('Please write your wishes 😊'); return; }
 
     const phones = {
-        kero: '201271566015',
-        roma: '201211716064'  // 👈 replace with phone number
+        Michael: '201116619972',  
+        Sally: '201110623391'  // 👈 replace with phone number
     };
 
     const fullMessage = `Hello! I'm *${name}* 💌\n\n${message}\n\n❤️ Michael & Sally - 08/10/2026`;
