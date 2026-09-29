@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="icon" href="Image/icon.png" type="image/x-icon">
+
+    <title>Michael ❤ Sally</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Invetion.css">
+</head>
+<body>
+    <!-- first page -->
+<audio id="bgMusic" loop hidden>
+    <source src="Music/Video Project 2.m4a" type="audio/mp4">
+</audio>
+<div id="welcomePage">
+
+<div class="page-container">
+
+    <div class="card">
+
+        <div class="heart">❤</div>
+
+        <h1>
+            Michael <br>
+            <span class="and">&</span> <br>
+            Sally
+        </h1>
+
+        <div class="line-with-heart">
+            <span>❤</span>
+        </div>
+
+        <p class="date">08 / 10 / 2026</p>
+
+        <div class="line-with-heart">
+            <span>❤</span>
+        </div>
+
+        <p class="invite-text">We will be delighted to celebrate our special day with you.</p>
+
+        <button class="open-btn" onclick="openInvitation()">
+            <span>❤</span> Open Invitation
+        </button>
+
+        <!-- FOOTER INSIDE CARD -->
+        <footer>Made with All Love ❤️ by Karen</footer>
+
+    </div>
+
+</div>
+</div>
+
+<div id="invitationPage" style="display: none;"> 
+<!-- second page -->
+<div class="card">
+
+    <!-- FRAME IMAGE with names inside -->
+    <div class="names-frame">
+        <img src="Image/flowerframe.png" alt="Floral Frame" class="frame-image">
+        <div class="name-content">
+            <p class="small-title">THE <br> WEDDING <br> OF</p>
+            <h1>
+                Michael
+                <span>&</span>
+                Sally
+            </h1>
+        </div>
+    </div>
+<div class="story-section">
+    <h1 class="story-title">Our Story</h1>
+    <p class="story-text">
+        Our story began on 27-09-2025, and from that day on, it became the beginning of a new life — forever..❤
+    </p>
+</div>
+    <!-- MEMORIES OF LOVE SECTION -->
+    <div class="album-section">
+
+        <h2 class="album-title">Memories of Love</h2>
+
+        <div class="slider-wrapper">
+            <button class="slider-btn prev">&#10094;</button>
+
+            <div class="slider-track">
+                <div class="slide"><img src="Image/p.jpeg" alt="Memory 1"></div>
+                <div class="slide"><img src="Image/p2.jpeg" alt="Memory 2"></div>
+                <div class="slide"><img src="Image/p3.jpeg" alt="Memory 3"></div>
+                <div class="slide"><img src="Image/p1.jpeg" alt="Memory 4"></div>
+                <div class="slide"><img src="Image/p4.jpeg" alt="Memory 5"></div>
+                <div class="slide"><img src="Image/p5.jpeg" alt="Memory 6"></div>
+                 <div class="slide"><img src="Image/p6.jpeg" alt="Memory 6"></div>
+
+            </div> 
+            <button class="slider-btn next">&#10095;</button>
+        </div>
+
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+    <div class="content-box">
+    <h2 class="section-title">ٍSave the Date</h2>
+        <p class="invitation-text">
+            We are excited to celebrate our special day with you!
+        </p>
+
+    <div class="wedding-date-box">
+        <span class="day-name">THURSDAY</span>
+
+        <div class="date-main">
+            <span class="day">08</span> |
+            <span class="month">OCTOBER</span> |
+            <span class="year">2026</span>
+        </div>
+<!-- Add to Calendar Button -->
+
+<button class="add-calendar-btn" onclick="addToCalendar()">
+    🗓️ Add to Calendar
+</button>
+<br> <br>
+         <div class="countdown-box">
+        <div class="count-item">
+            <span id="days">0</span>
+            <small>Days</small>
+        </div>
+
+        <div class="count-item">
+            <span id="hours">0</span>
+            <small>Hours</small>
+        </div>
+
+        <div class="count-item">
+            <span id="minutes">0</span>
+            <small>Minutes</small>
+        </div>
+
+        <div class="count-item">
+            <span id="seconds">0</span>
+            <small>Seconds</small>
+        </div>
+    </div>
+    </div>
+   
+    <div class="welcome">
+        <p>"Then Adam said, 'This is now bone of my bones and flesh of my flesh."   Genesis 2:23 </p>
+        <br>
+        <span class="welcome">WELCOME AT</span>
+        <span class="time"> ⏰ 05:00 PM</span>
+    </div>
+    <!-- CHURCH SECTION -->
+<div class="church-section">
+
+    <div class="church-card">
+        <h3 class="church-name">
+            Church of Virgin Mary & St. Mina
+        </h3>
+
+        <p class="church-address">
+          Church of The Blessed Virgin Mary and The Great Martyr St. Mina , in Nasr City
+        </p>
+<div class="map-container">
+       <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.304495121149!2d31.36986267382338!3d30.05680521798802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583dc1737f2da1%3A0x7f160d50823da780!2sChurch%20of%20The%20Blessed%20Virgin%20Mary%20and%20The%20Great%20Martyr%20St.%20Mina%20%2C%20in%20Nasr%20City!5e0!3m2!1sen!2seg!4v1782671488852!5m2!1sen!2seg"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+    </div>
+</div>
+
+    </div>
+    <br>
+<span class="end" >Your presence will honor us and complete our joy 🤵👰 </span>
+</div>
+<!-- RSVP SECTION -->
+<!-- GUESTBOOK / RSVP SECTION -->
+<div class="rsvp-section">
+    <h2 class="rsvp-title">GUESTBOOK</h2>
+
+    <div class="rsvp-card">
+        <input type="text" id="rsvpName" class="rsvp-input" placeholder="Enter your name*" />
+        <textarea id="rsvpMessage" class="rsvp-textarea" placeholder="Enter your wishes*"></textarea>
+        <div class="rsvp-btn-row">
+    <button class="rsvp-send-btn kero" onclick="sendRSVP('kero')">💌 Send to Michael</button>
+    <button class="rsvp-send-btn roma" onclick="sendRSVP('roma')">💌 Send to Sally</button>
+</div>
+    </div>
+
+    <p class="rsvp-empty">The book of our love is open..leave your mark💌</p>
+</div>
+</div>
+    <footer>Made with All Love ❤️ by Karen</footer>
+
+</div>
+</div>
+<script src="Invetion.js"></script>
+
+</body>
+</html>
