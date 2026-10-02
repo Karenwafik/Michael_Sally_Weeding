@@ -25,12 +25,12 @@ const music = document.getElementById("bgMusic");
 button.addEventListener("click", function () {
 
     music.addEventListener('loadedmetadata', function () {
-        music.currentTime = 16;
+        music.currentTime = 10;
         music.play();
     });
 
     if (music.readyState >= 1) {
-        music.currentTime = 16;
+        music.currentTime = 10;
         music.play();
     }
 
@@ -177,7 +177,7 @@ function sendRSVP(to) {
 function addToCalendar() {
     const title = encodeURIComponent("Michael & Sally Wedding ❤️");
     const details = encodeURIComponent("We joyfully invite you to celebrate our wedding day!");
-    const location = encodeURIComponent("Church of Virgin Mary");
+    const location = encodeURIComponent("ST.George Church");
     const startDate = "20261008T170000"; // 5:00 PM
     const endDate = "20261008T230000";   // 11:00 PM
 
